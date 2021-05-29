@@ -20,7 +20,7 @@ function NavBox({id,text,svgIcon,NavItemPos}:any){
               id={id}
               className={`${PadAssign()} pr-0.5 mr-1 flex flex-col w-max items-center cursor-pointer group py-0.5 transform scale-100 hover:scale-95 transition-transform delay-100 ease-out`}
             >
-              <div className="hidden group-hover:!grid grid-cols-1 absolute -top-1 -left-2 group-hover:animate-pulse">
+              <div className="hidden group-hover:!grid grid-cols-1 focus:!grid absolute -top-1 -left-2 group-hover:animate-pulse">
                 {svgIcon}
               </div>
               <h1

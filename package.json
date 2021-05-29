@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview --host"
+    "serve": "vite preview ",
+    "pty":"prettier --ignore-path .gitignore --write ."
   },
   "dependencies": {
     "@headlessui/react": "^1.2.0",
