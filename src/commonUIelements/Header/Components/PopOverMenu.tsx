@@ -1,7 +1,7 @@
 import React,{Fragment} from 'react'
 import { ChevronDownIcon,MenuIcon as Icon} from '@heroicons/react/outline'
 import { Popover, Transition, Disclosure } from '@headlessui/react'
-import NavItemsData from '../data/data'
+import NavItemsData from '../../../data/data'
 
 export default function PopOver(){
 	return(

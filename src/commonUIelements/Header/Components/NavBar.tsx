@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import NavItemsData from "../data/data";
+import NavItemsData from '../../../data/data'
 
 function NavBar() {
   const paddingR = "pr-0.5 mr-1";

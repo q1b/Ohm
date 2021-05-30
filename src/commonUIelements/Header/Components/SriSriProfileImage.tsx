@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../../lib/SriSriRaviShankar_Profile.jpg' 
+import Image from '../../../lib/SriSriRaviShankar_Profile.jpg' 
 function SriSriProfileImage(){
 	return(
 		<>
