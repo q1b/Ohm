@@ -168,7 +168,7 @@ function MenuItems({ SubItemsList, open }: any) {
                         active
                           ? "bg-indigo-600 dark:bg-amber-500 text-white dark:text-amber-700"
                           : "text-gray-700 dark:text-white",
-                        "flex item-center px-4 py-2 text-sm transition-colors duration-100 ease-out"
+                        "flex item-center px-4 py-2 text-sm transition-colors duration-200 ease-in-out"
                       )}
                     >
                       {active ? (
