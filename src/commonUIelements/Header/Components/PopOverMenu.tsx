@@ -1,7 +1,7 @@
 import React,{Fragment} from 'react'
 import { ChevronDownIcon,MenuIcon as Icon} from '@heroicons/react/outline'
 import { Popover, Transition, Disclosure } from '@headlessui/react'
-import NavItemsData from '../../../data/data'
+import NavItemsData from '../NavItemsData'
 
 export default function PopOver(){
 	return(
@@ -40,10 +40,10 @@ function PopOverItem(){
   }
 	return(<>
 			{ NavItemsData.map((NavItemData)=>{return(
-			<Disclosure key={NavItemData.Id}>
+			<Disclosure key={NavItemData.Id.toString()}>
 			{({open})=>(
 				<div className={classNames(NavItemData.SubItem ? (open ? 'h-[21.7rem] ':'h-14') : "" ," flex rounded-md flex-col bg-white p-2 shadow-md")} style={{transition:"height 300ms ease-in-out"}}>
-					<Disclosure.Button as={NavItemData.SubItem ? 'button':'a' } key={NavItemData.Id} className="bg-coolGray-200 w-full dark:bg-orange-100 p-2 flex place-content-between w-full rounded-md">
+					<Disclosure.Button as={NavItemData.SubItem ? 'button':'a' } key={NavItemData.Id.toString()} className="bg-coolGray-200 w-full dark:bg-orange-100 p-2 flex place-content-between w-full rounded-md">
 					<section className="flex w-max">
 						{<NavItemData.Icon className="w-6 h-6 text-blueGray-800 dark:text-orange-500 mr-2"/>}
 						<h1 className="text-blueGray-500 dark:text-yellow-400">{NavItemData.Name}</h1>
@@ -59,7 +59,7 @@ function PopOverItem(){
 
 			<Transition
 				 	show={open}
-				 	key={SubNavItem.Id}
+				 	key={SubNavItem.Id.toString()}
 			        enter="transition duration-500 ease-out delay-75"
 			        enterFrom="transform scale-95 opacity-0"
 			        enterTo="transform scale-100 opacity-100"
@@ -67,7 +67,7 @@ function PopOverItem(){
 			        leaveFrom="transform scale-100 opacity-400"
 			        leaveTo="transform scale-95 opacity-0 "
 			      >
-							<Disclosure.Panel static key={SubNavItem.Id} className="text-sm text-blueGray-800 dark:text-orange-500 m-0.5 p-0.5 pl-3 rounded-md ">
+							<Disclosure.Panel static key={SubNavItem.Id.toString()} className="text-sm text-blueGray-800 dark:text-orange-500 m-0.5 p-0.5 pl-3 rounded-md ">
 							  <div className="flex item-center px-3 py-1 mt-3 rounded-lg bg-coolGray-200 w-full dark:bg-orange-100">
 								  <SubNavItem.OIcon className="w-5 h-auto" />
 								  <h1>{SubNavItem.Name}</h1>

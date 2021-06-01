@@ -5,7 +5,23 @@ import { LightBulbIcon as LifeIcon, FireIcon as WisdomIcon, PhoneIcon as Contact
 import { SunIcon as OSunIcon } from "@heroicons/react/outline";
 import { SunIcon as SSunIcon } from "@heroicons/react/solid"
 
-export default ([
+interface NavItems {
+    Id:Number,
+    Pos:'Top'|'Mid'|'Lst',
+    Name:String,
+    Icon:any,
+    SubItem:Boolean,
+    SubItemList:Array<SubNavItems>
+}
+
+interface SubNavItems {
+    Id:Number,
+    Name:String,
+    OIcon:any,
+    SIcon:any,
+    href:String
+}
+const NavData:Array<NavItems> = [
     {
         Id:1,
         Pos:'Top',
@@ -144,4 +160,5 @@ export default ([
         SubItemList:[
         ]
     }
-])
+]
+export default NavData;

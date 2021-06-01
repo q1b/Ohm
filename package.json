@@ -5,13 +5,15 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview ",
-    "pty":"prettier --ignore-path .gitignore --write ."
+    "pty": "prettier --ignore-path .gitignore --write ."
   },
   "dependencies": {
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
+    "@types/node": "^15.6.1",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "rive-js": "^0.7.14"
   },
   "devDependencies": {
     "@tailwindcss/jit": "^0.1.18",

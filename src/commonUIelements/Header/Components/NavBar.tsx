@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import NavItemsData from '../../../data/data'
+import NavItemsData from '../NavItemsData'
 
 function NavBar() {
   const paddingR = "pr-0.5 mr-1";
@@ -34,11 +34,11 @@ function NavBar() {
       <div className="md:!flex hidden px-2 pt-1 pb-2 transition-colors ease-in-out delay-75 rounded-lg shadow select-none w-max place-content-center bg-blueGray-800 hover:bg-blueGray-900 dark:bg-white">
         {NavItemsData.map((NavItemData): JSX.Element => {
           return (
-            <Menu as="div" key={NavItemData.Id} className="">
+            <Menu as="div" key={NavItemData.Id.toString()} className="">
               {({ open }) => (
                 <Fragment>
                   <Menu.Button
-                    key={NavItemData.Id}
+                    key={NavItemData.Id.toString()}
                     className={classNames(
                       PadAssign(NavItemData.Pos),
                       ExtraSpaceFroDropDown(
