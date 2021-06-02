@@ -8,24 +8,24 @@ export default [
 		index:1,
 		url:Image1,
 		header:'Guru Purnima',
-		content:'Buddha embodied silence & compassion, and the way for this is through Meditation. In this trying time, these values are more relevant.',
+		content:'Knowledge, movement, achievement, and freedom - These are the four aspects that one gains from having a Guru.'
 	},
 	{
 		index:2,
 		url:Image2,
-		header:'Buddha Purnima',
-		content:'Buddha embodied silence & compassion, and the way for this is through Meditation. In this trying time, these values are more relevant.',
+		header:'Overcoming pessimism & depression in the pandemic',
+		content:'The escalating global health crisis has reinforced the need for equipping our inner self-defense mechanisms too…'
 	},
 		{
 		index:3,
 		url:Image3,
-		header:'Buddha Purnima',
-		content:'Buddha embodied silence & compassion, and the way for this is through Meditation. In this trying time, these values are more relevant.',
+		header:'Let the whole world be well and happy!',
+		content:'Health has no origin, but disease does. Health has no cause or reason, but disease does. Diseases occur when the laws of nature are violated…'
 	},	{
 		index:4,
 		url:Image4,
-		header:'Buddha Purnima',
-		content:'Buddha embodied silence & compassion, and the way for this is through Meditation. In this trying time, these values are more relevant.',
+		header:'One World Family ',
+		content:'It’s only through love that you can make the whole world realise, we are OneWorldFamily. Vasudhaiva Kutumbakam!'
 	}
 
 
