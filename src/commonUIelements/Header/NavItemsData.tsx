@@ -6,22 +6,22 @@ import { SunIcon as OSunIcon } from "@heroicons/react/outline";
 import { SunIcon as SSunIcon } from "@heroicons/react/solid"
 
 interface NavItems {
-    Id:Number,
+    Id:number,
     Pos:'Top'|'Mid'|'Lst',
-    Name:String,
+    Name:string,
     Icon:any,
-    SubItem:Boolean,
-    SubItemList:Array<SubNavItems>
+    SubItem:boolean,
+    SubItemList:SubNavItems[]
 }
 
 interface SubNavItems {
-    Id:Number,
-    Name:String,
+    Id:number,
+    Name:string,
     OIcon:any,
     SIcon:any,
-    href:String
+    href:string
 }
-const NavData:Array<NavItems> = [
+const NavData:NavItems[] = [
     {
         Id:1,
         Pos:'Top',

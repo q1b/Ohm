@@ -168,7 +168,7 @@ export default function Banner() {
         </svg>
         <div className="relative flex items-center justify-center">
           <div className="font-medium text-white font-round">
-            Upcomming Event: Secret Knowledge of Vedas 
+            Upcomming Event: Secret Knowledge of Vedas
           </div>
           <span
             aria-hidden="true"

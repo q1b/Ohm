@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import NavItemsData from '../NavItemsData'
+import NavItemsData from "../NavItemsData";
 
 function NavBar() {
   const paddingR = "pr-0.5 mr-1";
@@ -65,7 +65,7 @@ function NavBar() {
                     >
                       {
                         <NavItemData.Icon className="text-cyan-400 dark:text-white w-auto h-[13px] sm:h-[14.5px] md:h-[16px] bg-blue-600 dark:bg-orange-500 rounded-full p-[1px]" />
-                      } 
+                      }
                     </div>
                     <h1
                       className={classNames(
@@ -89,7 +89,7 @@ function NavBar() {
                             "inline-block top-1/2 ml-0.5 mt-0.5 transform -translate-y-1/2 absolute w-3.5 h-3.5 bg-blueGray-900 dark:bg-lime-700 dark:group-hover:bg-rose-500 rounded-full p-0.5 text-white transition delay-100 ease-in-out"
                           )}
                         />
-                      )}  
+                      )}
                     </h1>
                     <article className="flex w-[95%]">
                       <div
