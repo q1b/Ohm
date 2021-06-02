@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Nova+Round&display=swap');
 /* Importing JetBrains Mono font and Nova Round Font from Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

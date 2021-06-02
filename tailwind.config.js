@@ -19,7 +19,8 @@ module.exports = {
       },
       fontFamily:{
         jetMono : 'JetBrains Mono, monospace' ,
-        round: 'Nova Round, cursive'
+        round: 'Nova Round, cursive',
+        comma: 'Finger Paint, cursive'
       },
     },
   },
