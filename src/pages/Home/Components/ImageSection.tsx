@@ -40,7 +40,7 @@ export default function ImageSection(){
     }, 7000);
   });
 	return(
-      <section className="h-[100vh] w-full flex items-center justify-center">
+      <section className="h-[calc(100vh-48px)] sm:h-[100vh] w-full flex items-center justify-center">
         <article className="absolute flex items-center justify-center h-[calc(100%-96px)] w-[calc(100%-10px)] top-[96px]">
           <div className="h-[97%] flex items-center justify-center md:w-[calc(90%)]  mt-2 md:mt-1 ">
             <Transition
@@ -71,14 +71,14 @@ export default function ImageSection(){
             >
               <div className="absolute bottom-10 bg-white dark:bg-green-500 p-4 dark:bg-opacity-20 z-10 bg-opacity-20 w-[300px] lg:w-[675px] backdrop-filter backdrop-blur rounded-lg">
                 <h1
-                  className="ml-0.5 sm:ml-2 text-blueGray-900 dark:text-green-700 text-xl lg:text-4xl font-semibold "
+                  className="ml-0.5 sm:ml-2 text-blueGray-900 dark:text-green-100 text-xl lg:text-4xl font-semibold "
                   style={{ textShadow: "0.5px 0.5px 1px #00FFAA" }}
                 >
                   <big className="font-comma absolute left-2.5 top-2.5">"</big>
                   {header}
                 </h1>
                 <blockquote
-                  className="mt-2 text-base text-coolGray-900 dark:text-green-100 lg:text-xl"
+                  className="mt-2 text-base text-coolGray-900 dark:text-lime-400 lg:text-xl"
                   style={{ textShadow: "0.5px 0.5px 2px #000" }}
                 >
                   {content}
