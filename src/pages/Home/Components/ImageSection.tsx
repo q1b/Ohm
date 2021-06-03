@@ -6,7 +6,7 @@ import Data from "../ImageData";
 import ImageS from '../../../lib/Images/SriSriRaviShankar_Profile.jpg'
 
 export default function ImageSection(){
-	  const [index, setIndex] = useState(0);
+	const [index, setIndex] = useState(0);
   const [header, setHeader] = useState("Me is You");
   const [content, setContent] = useState(
     "You are Me as You breath I also breath, I eat you Eat , I care You care."
