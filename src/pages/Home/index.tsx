@@ -13,7 +13,7 @@ function Home() {
             Some Light Over What Sri Sri Did in Past
           </h1>
         </div>
-        <section className="bg-gradient-to-tr from-fuchsia-500 to-purple-600 dark:from-yellow-400 dark:to-orange-500 mt-10 w-[97vw] md:w-[80vw] rounded-lg">
+        <section className="bg-gradient-to-tr from-fuchsia-500 to-purple-600 dark:from-yellow-400 dark:to-orange-500 mt-10 w-[95vw] md:w-[80vw] rounded-lg">
           {/*Grid to Show all Main DisCourse*/}
           <section className="flex p-5 md:p-4 place-content-between ">
             <h1 className="font-sans w-max font-bold text-indigo-900 dark:text-orange-900 underline text-4xl md:text-7xl">
