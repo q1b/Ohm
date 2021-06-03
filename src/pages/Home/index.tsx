@@ -5,7 +5,7 @@ import Making_Impact from "./Components/Making_Impact"
 function Home() {
   return (
     <>
-      <ImageSection />
+      <ImageSection className="" />
       <Making_Impact/>
     </>
   );

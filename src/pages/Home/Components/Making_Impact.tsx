@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Impact_Data from '../data'
 // import {Transition} from '@headlessui/react'
 import {ArrowCircleRightIcon } from "@heroicons/react/solid";
+import { Transition } from '@headlessui/react';
 
 export default function MakingImpact(){
   
@@ -24,9 +25,13 @@ export default function MakingImpact(){
         </div>
         {Impact_Data.map((object,index)=>{
           return(
-        <section key={index} className={classNames(index!==current ? '!opacity-0':'',"opacity-100 bg-gradient-to-tr from-fuchsia-500 to-purple-600 dark:from-yellow-400 dark:to-orange-500 w-[95vw] md:w-[80vw] transition-opacity duration-1000 rounded-lg")}>
-          {index===current && (
-          <>
+        <Transition as="section" key={index} className={classNames(`${object.FromColor} ${object.ToColor} bg-gradient-to-tr dark:from-yellow-400 dark:to-orange-500 w-[95vw] md:w-[80vw] rounded-lg`)}
+          show={index===current}
+          enter="transition-opacity duration-1000 ease-in-out"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          >
+          
           <section className='flex p-5 md:p-4 place-content-between'>
                 <div className={classNames('flex place-content-between w-full')}>
                   <h1 className="font-sans w-max font-bold text-white dark:text-orange-900 text-4xl md:text-7xl line-clamp-1">
@@ -37,7 +42,7 @@ export default function MakingImpact(){
           </section>
           <div className="px-4 pt-1 pb-4"> 
             <div className="p-2 bg-white dark:bg-orange-100 rounded-lg">
-            <blockquote className="mx-1 text-[1.09rem] font-round text-purple-600 dark:text-amber-600 line-clamp-4 ">
+            <blockquote className={`mx-1 text-[1.09rem] font-round ${object.subHeadColor} dark:text-amber-600 line-clamp-4`}>
               {object.subHead}
             </blockquote>
             </div>
@@ -53,9 +58,7 @@ export default function MakingImpact(){
               </button>
             </article>
           </div>
-          </>
-          )}
-        </section>
+        </Transition>
         )})}
       </section>
 	)
