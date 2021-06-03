@@ -1,8 +1,14 @@
 import React from 'react'
+
 import { SunIcon, MoonIcon, GlobeIcon } from "@heroicons/react/outline";
 import {ArrowCircleRightIcon } from "@heroicons/react/solid";
 
 export default function MakingImpact(){
+  
+  function classNames(...classes: any) {
+    return classes.filter(Boolean).join(" ");
+  }
+
 	return(	
       <section className="w-full grid grid-cols-1 place-items-center min-h-[120vh] py-14 bg-[#000C15] dark:bg-white mt-10">
         <div className="">

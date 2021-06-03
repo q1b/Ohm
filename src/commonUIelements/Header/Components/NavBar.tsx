@@ -159,7 +159,7 @@ function MenuItems({ SubItemsList, open }: any) {
         <div className="py-1">
           {SubItemsList.map((SubItemListItem: any): JSX.Element => {
             return (
-              <Menu.Item key={SubItemListItem.Id}>
+              <Menu.Item as="a" href="#" key={SubItemListItem.Id}>
                 {({ active }) => {
                   return (
                     <a
