@@ -17,6 +17,12 @@ module.exports = {
       colors:{
         ...colors
       },
+      lineClamp: {
+        7: '7',
+        8: '8',
+        9: '9',
+        10: '10',
+      },
       fontFamily:{
         jetMono : 'JetBrains Mono, monospace' ,
         round: 'Nova Round, cursive',
@@ -27,5 +33,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+      require('@tailwindcss/line-clamp'),
+    ],
 }
