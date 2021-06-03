@@ -16,37 +16,39 @@ export default function MakingImpact(){
   }
 
 	return(	
-      <section className="w-full grid grid-cols-1 place-items-center min-h-[120vh] py-14 bg-[#000C15] dark:bg-white mt-10">
-        <div className="">
+      <section className="w-full grid grid-cols-1 place-items-center place-content-center py-10 bg-[#000C15] dark:bg-white">
+        <div className="mb-10">
           <h1 className="text-[4vw] sm:text-2xl md:text-4xl text-white dark:text-lime-500 underline font-round">
             Some Light Over What Sri Sri Did in Past
           </h1>
         </div>
         {Impact_Data.map((object,index)=>{
           return(
-        <section key={index} className={classNames(index!==current ? 'hidden !opacity-0':'',"opacity-100 bg-gradient-to-tr from-fuchsia-500 to-purple-600 dark:from-yellow-400 dark:to-orange-500 mt-10 w-[95vw] md:w-[80vw] transition-opacity duration-1000 rounded-lg")}>
+        <section key={index} className={classNames(index!==current ? '!opacity-0':'',"opacity-100 bg-gradient-to-tr from-fuchsia-500 to-purple-600 dark:from-yellow-400 dark:to-orange-500 w-[95vw] md:w-[80vw] transition-opacity duration-1000 rounded-lg")}>
           {index===current && (
           <>
-          <section className="flex p-5 md:p-4 place-content-between ">
+          <section className='flex p-5 md:p-4 place-content-between'>
                 <div className={classNames('flex place-content-between w-full')}>
-                  <h1 className="font-sans w-max font-bold text-indigo-900 dark:text-orange-900 underline text-4xl md:text-7xl">
+                  <h1 className="font-sans w-max font-bold text-white dark:text-orange-900 text-4xl md:text-7xl line-clamp-1">
                     {object.head}
                   </h1>
                  <object.Icon className="w-10 h-auto md:w-16 text-white  dark:text-white" />
                 </div>
           </section>
-          <div className="p-4"> 
-            <blockquote className="px-2 mx-1 text-purple-600 dark:text-amber-600 bg-indigo-100 line-clamp-2 dark:bg-orange-100 rounded-lg">
-            {object.subHead}
+          <div className="px-4 pt-1 pb-4"> 
+            <div className="p-2 bg-white dark:bg-orange-100 rounded-lg">
+            <blockquote className="mx-1 text-[1.09rem] font-round text-purple-600 dark:text-amber-600 line-clamp-4 ">
+              {object.subHead}
             </blockquote>
+            </div>
             <h1 className="text-white line-clamp-5 sm:line-clamp-6 md:line-clamp-7 lg:line-clamp-8 text-[1.09rem] m-2 font-round rounded-lg">
-            {object.content}
+              {object.content}
             </h1>
             <article className="flex place-content-between place-items-center">
               <button className="p-2 m-2 text-purple-600 dark:text-amber-600 bg-white rounded-lg focus:outline-none focus:ring-2 ">
                 Read more
               </button>
-              <button onClick={nextImpact} className="absolute right-10 bg-white w-10 h-10 focus:ring-2 focus:outline-none rounded-full">
+              <button onClick={nextImpact} className="bg-white w-10 h-10 focus:ring-2 focus:outline-none rounded-full">
               	<ArrowCircleRightIcon className="w-10 h-10 text-indigo-900 dark:text-amber-600"/>
               </button>
             </article>
