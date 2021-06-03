@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Impact_Data from '../data'
+import Impact_Data from './data'
 // import {Transition} from '@headlessui/react'
 import {ArrowCircleRightIcon } from "@heroicons/react/solid";
 import { Transition } from '@headlessui/react';
