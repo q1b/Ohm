@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";  
 //Components
 import ImageSection from "./Components/ImageSection";
 import Making_Impact from "./Components/Making_Impact";
@@ -37,7 +37,15 @@ function Home() {
       </ul>
       </section>
       <section className="w-full h-96 bg-white grid grid-cols-3">
-        
+        <article className="w-48 h-60 bg-green-400 rounded-lg">
+          
+        </article>
+        <article className="w-48 h-60 bg-green-400 rounded-lg">
+          
+        </article>
+        <article className="w-48 h-60 bg-green-400 rounded-lg">
+          
+        </article>
       </section>
     </>
   );
