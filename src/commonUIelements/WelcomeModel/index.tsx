@@ -64,17 +64,17 @@ export default function WelcomeModel(){
     </section>
 
     </section>
-    <section className="bg-white w-full text-white mb-10 place-items-center">
-      <article className="bg-white text-blue-500 w-full sm:text-xl py-1 px-2">
-        Bless Me With Nothing,
-      </article>
-      <article className="bg-green-300 w-full sm:text-xl py-1 px-2">
-        Bless Me with, the energy highest,
-      </article>
-      <article className="bg-orange-300 text-orange-900 w-full sm:text-xl py-1 px-2">
-		{/*Bless Me With EveryThing ,*/} 
-       Bless Me With the Best
-      </article>      
+    <section className="h-full w-full flex flex-col mb-10 justify-center text-white ">
+        <article className="bg-white text-blue-500 w-full sm:text-xl py-1 px-2">
+          Bless Me With Nothing,
+        </article>
+        <article className="bg-green-300 w-full sm:text-xl py-1 px-2">
+          Bless Me with, the energy highest,
+        </article>
+        <article className="bg-orange-300 text-orange-900 w-full sm:text-xl py-1 px-2">
+  		{/*Bless Me With EveryThing ,*/} 
+         Bless Me With the Best
+        </article>      
     </section>
   </div>
   </Transition>
