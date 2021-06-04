@@ -8,26 +8,26 @@ function Home() {
     <>
       <ImageSection />
       <Making_Impact />
-      <section className="w-full p-5 py-20">
-      <ul className="p-2 bg-gray-50 rounded-3xl sm:p-5 xl:p-6">
+      <section className="w-full flex place-content-center p-5 py-20 bg-black dark:bg-[#FF0030]">
+      <ul className="p-2 max-w-[600px] rounded-3xl ">
       {Timeline_Data.map((Now_Data,index)=>{return(
        <li key={index}>
           <article>
             <a
               href={Now_Data.href}
-              className="relative grid items-start p-3 overflow-hidden md:grid-cols-8 xl:grid-cols-9 rounded-xl sm:p-5 xl:p-6 hover:bg-white"
+              className="relative grid items-start px-3 pt-2 pb-3 overflow-hidden rounded-xl hover:bg-white dark:hover:bg-blueGray-900 transition-color duration-500 ease-in-out"
             >
-              <h3 className="mb-1 font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 ml-9 md:ml-0">
+              <h3 className="mb-1 text-xl text-blueGray-500 dark:text-white ml-8">
                 {Now_Data.Event}
               </h3>
               <time
                 dateTime={Now_Data.Date.toISOString()}
-                className="flex items-center row-start-1 mb-1 font-medium md:col-start-1 md:col-span-2 md:row-end-3 md:mb-0"
+                className="flex items-center text-cyan-600 dark:text-red-900 row-start-1 mb-1 font-medium "
               >
               <Now_Data.PlaceholderIcon/>
                 {Now_Data.StringDate}
               </time>
-              <p className="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0">
+              <p className="text-[1.05rem] text-blueGray-900 dark:text-rose-900 ml-8">              
               {Now_Data.inDetail}
               </p>
             </a>
@@ -35,6 +35,9 @@ function Home() {
         </li>        
       )})}
       </ul>
+      </section>
+      <section className="w-full h-96 bg-white grid grid-cols-3">
+        
       </section>
     </>
   );

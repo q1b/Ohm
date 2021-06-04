@@ -25,7 +25,7 @@ export default function MakingImpact(){
         </div>
         {Impact_Data.map((object,index)=>{
           return(
-        <Transition as="section" key={index} className={classNames(`${object.FromColor} ${object.ToColor} bg-gradient-to-tr dark:from-yellow-400 dark:to-orange-500 w-[95vw] md:w-[80vw] rounded-lg`)}
+        <Transition as="section" key={index} className={classNames(`${object.FromColor} ${object.ToColor} bg-gradient-to-tr w-[95vw] md:w-[80vw] rounded-lg`)}
           show={index===current}
           enter="transition-opacity duration-1000 ease-in-out"
           enterFrom="opacity-0"
@@ -42,7 +42,7 @@ export default function MakingImpact(){
           </section>
           <div className="px-4 pt-1 pb-4"> 
             <div className="p-2 bg-white dark:bg-orange-100 rounded-lg">
-            <blockquote className={`mx-1 text-[1.09rem] font-round ${object.subHeadColor} dark:text-amber-600 line-clamp-4`}>
+            <blockquote className={`mx-1 text-[1.09rem] font-round ${object.subHeadColor} line-clamp-4`}>
               {object.subHead}
             </blockquote>
             </div>
