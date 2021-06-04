@@ -36,14 +36,14 @@ function Home() {
       )})}
       </ul>
       </section>
-      <section className="w-full h-96 bg-white grid grid-cols-3">
-        <article className="w-48 h-60 bg-green-400 rounded-lg">
+      <section className="w-full py-10 place-items-center gap-3 bg-emerald-400 grid grid-cols-1 sm:grid-cols-3">
+        <article className="w-48 h-60 bg-white rounded-lg">
           
         </article>
-        <article className="w-48 h-60 bg-green-400 rounded-lg">
+        <article className="w-48 h-60 bg-white rounded-lg">
           
         </article>
-        <article className="w-48 h-60 bg-green-400 rounded-lg">
+        <article className="w-48 h-60 bg-white rounded-lg">
           
         </article>
       </section>

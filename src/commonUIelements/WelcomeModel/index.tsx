@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import {Transition} from '@headlessui/react'
 
 export default function WelcomeModel(){
 	const [hidden,setHidden] = useState(false)
@@ -10,7 +11,15 @@ export default function WelcomeModel(){
     document.querySelector('body')?.classList.add('no-sroll')
   },[])
 	return(
-	<article className={`${hidden ? 'hidden' : '' } absolute top-0 z-[60] w-full h-screen bg-[#00000055] backdrop-blur backdrop-filter grid place-items-center`}>
+	<Transition as='article' 
+      enter="transition-opacity duration-500 ease-in-out"
+      enterFrom="opacity-0"
+      enterTo="opacity-100"
+      leave="transition-transform transition-opacity duration-500 ease-in"
+      leaveFrom="scale-100 opacity-100"
+      leaveTo="scale-80 opacity-0"
+      className=" absolute top-0 z-[60] w-full h-screen bg-[#00000055] backdrop-blur backdrop-filter grid place-items-center"
+      show={!hidden}>
 	<div className='bg-gradient-to-tr max-w-[400px] z-10 overflow-hidden from-[#0f122244] to-[#00000077] w-[95vw] h-[95vh] rounded-xl backdrop-blur-[1.5px] backdrop-saturate-100 border-warmGray-100 border-[2px] backdrop-filter' style={{boxShadow:"inset 0px 0px 10px 1px #FFFFFF77,inset 0px 0px 100px 1px #FFFFFF55,inset 0px 0px 200px 100px #AAFFFF17"}} >
     <header className="flex place-content-between p-2">
       <article className="flex flex-row place-items-center items-center text-white font-round text-3xl">
@@ -64,6 +73,6 @@ export default function WelcomeModel(){
       </article>      
     </section>
   </div>
-  </article>
+  </Transition>
 	)
 }
