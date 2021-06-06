@@ -21,8 +21,10 @@ export default function WelcomeModel(){
       className=" absolute top-0 z-[60] w-full h-screen bg-[#00000055] backdrop-blur backdrop-filter grid place-items-center"
       show={!hidden}>
 	<div className='bg-gradient-to-tr max-w-[400px] sm:max-w-[700px] z-10 overflow-hidden from-[#0f122244] to-[#00000077] w-[95vw] h-[95vh] rounded-xl backdrop-blur-[1.5px] backdrop-saturate-100 border-warmGray-100 border-[2px] backdrop-filter flex flex-col place-content-between' style={{boxShadow:"inset 0px 0px 10px 1px #FFFFFF77,inset 0px 0px 100px 1px #FFFFFF55,inset 0px 0px 200px 100px #AAFFFF17"}} >
-    <section>
+    <section className="flex flex-col">
     {/*To wrap header image discription together I created this sectoin*/}
+    <div>
+    {/*TO wrap Header and Table together in order to Make UI beautiful*/}
     <header className="flex place-content-between p-2">
       <article className="flex flex-row place-items-center items-center text-white font-round text-xl sm:text-4xl">
         <h1 className="ml-2">I am Sukhpreet Singh,</h1>
@@ -58,11 +60,13 @@ export default function WelcomeModel(){
         </tr>
       </tbody>
     </table>
-    <section className="bg-white rounded-l-full py-[4px] my-2 ml-2 flex place-items-center">
-        <img className="float-right object-cover object-right h-32 sm:h-40 ml-3 w-32 sm:w-40 rounded-full" src="https://www.srisriravishankar.org/wp-content/uploads/2020/07/130.jpg" alt="Sri Sri Ravi Shankar For Inspiration ."/>
-        <h1 className="text-blueGray-900 text-[0.8rem] sm:text-xl font-round p-2 font-bold">SriSri has been giving us more things then I can imagine, he is a dynamic personality. I am just fulfilling my wish to give him something. That also giving is might be useless in front of endless fountain of Energy.Hey ,Guru make me Hollow and Empty which I am already Is! . </h1>
-    </section>
-
+    </div>
+    <div className="h-auto flex my-auto flex-col justify-center place-items-center">
+      <section className="bg-white rounded-l-full py-[4px] my-2 ml-2 flex place-items-center">
+          <img className="float-right object-cover object-right h-32 sm:h-40 ml-3 w-32 sm:w-40 rounded-full" src="https://www.srisriravishankar.org/wp-content/uploads/2020/07/130.jpg" alt="Sri Sri Ravi Shankar For Inspiration ."/>
+          <h1 className="text-blueGray-900 text-[0.8rem] sm:text-xl font-round p-2 font-bold">SriSri has been giving us more things then I can imagine, he is a dynamic personality. I am just fulfilling my wish to give him something. That also giving is might be useless in front of endless fountain of Energy.Hey ,Guru make me Hollow and Empty which I am already Is! . </h1>
+      </section>
+    </div>
     </section>
     <section className="h-full w-full flex flex-col mb-10 justify-center text-white ">
         <article className="bg-white text-blue-500 w-full sm:text-xl py-1 px-2">

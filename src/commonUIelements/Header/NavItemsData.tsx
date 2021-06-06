@@ -21,6 +21,44 @@ interface SubNavItems {
     SIcon:any,
     href:string
 }
+export const Nav = [
+    {
+        Id:3,
+        Pos:'Mid',
+        Name:'Wisdom',
+        Icon:WisdomIcon,
+        SubItem:false,
+        SubItemList:[
+        ]
+    },
+    {
+        Id:4,
+        Pos:'Mid',
+        Name:'Events',
+        Icon:EventsIcon,
+        SubItem:false,
+        SubItemList:[
+        ]
+    },
+    {
+        Id:5,
+        Pos:'Mid',
+        Name:'Blog',
+        Icon:BlogIcon,
+        SubItem:false,
+        SubItemList:[
+        ]
+    },
+    {
+        Id:6,
+        Pos:'Lst',
+        Name:'Contacts',
+        Icon:ContactsIcon,
+        SubItem:false,
+        SubItemList:[
+        ]
+    }
+]
 const NavData:NavItems[] = [
     {
         Id:1,
@@ -124,41 +162,5 @@ const NavData:NavItems[] = [
             },
         ]
     },
-    {
-        Id:3,
-        Pos:'Mid',
-        Name:'Wisdom',
-        Icon:WisdomIcon,
-        SubItem:false,
-        SubItemList:[
-        ]
-    },
-    {
-        Id:4,
-        Pos:'Mid',
-        Name:'Events',
-        Icon:EventsIcon,
-        SubItem:false,
-        SubItemList:[
-        ]
-    },
-    {
-        Id:5,
-        Pos:'Mid',
-        Name:'Blog',
-        Icon:BlogIcon,
-        SubItem:false,
-        SubItemList:[
-        ]
-    },
-    {
-        Id:6,
-        Pos:'Lst',
-        Name:'Contacts',
-        Icon:ContactsIcon,
-        SubItem:false,
-        SubItemList:[
-        ]
-    }
 ]
 export default NavData;
