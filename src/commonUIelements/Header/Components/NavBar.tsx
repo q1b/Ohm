@@ -182,7 +182,7 @@ function MenuItems({ SubItemsList, open }: any) {
                 {({ active }) => {
                   return (
                     <a
-                      href="#"
+                      href={SubItemListItem.href}
                       className={classNames(
                         active
                           ? "bg-indigo-600 dark:bg-amber-500 text-white dark:text-amber-700"
